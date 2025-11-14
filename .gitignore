@@ -1,0 +1,96 @@
+# ==============================
+# Flutter General
+# ==============================
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+build/
+generated_plugin_registrant.dart
+
+# Flutter Plugins
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# ==============================
+# IDE Files (Remove Noise)
+# ==============================
+.idea/
+.vscode/
+*.iml
+
+# ==============================
+# CI/CD Specific (VERY IMPORTANT)
+# Prevent uploading generated build files or secrets.
+# ==============================
+
+# Android
+android/.gradle/
+android/local.properties
+android/key.properties
+android/app/keystore.jks
+android/app/google-services.json
+**/android/app/app-release.apk
+**/android/app/app-release.aab
+**/android/app/debug
+**/android/app/profile
+
+# iOS
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/ServiceDefinitions.json
+ios/Runner/GoogleService-Info.plist
+ios/Runner/GeneratedPluginRegistrant.*
+ios/DerivedData/
+*.xcworkspace
+*.xcuserstate
+*.xcuserdata/
+**/*.mobileprovision
+**/*.p12
+
+# macOS
+macos/Flutter/ephemeral/
+macos/Pods/
+
+# Windows/Linux
+windows/flutter/ephemeral/
+linux/flutter/ephemeral/
+
+# Web
+web/generated/
+web/.dart_tool/
+
+# ==============================
+# Secrets & Environment Files
+# ==============================
+.env
+.env.*
+*.credentials
+*.json
+*.p12
+*.pem
+*.key
+private_key.pem
+
+# Codemagic Secrets (Optional)
+.codemagic/
+.codemagic-secrets
+.codemagic-temp/
+
+# ==============================
+# Logs & System Files
+# ==============================
+*.log
+pubspec.lock
+*.DS_Store
+*.swo
+*.swp
+
+# ==============================
+# Other Archives
+# ==============================
+*.zip
+*.tar
+*.tar.gz
